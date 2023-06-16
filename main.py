@@ -2,8 +2,8 @@ import webbrowser
 
 import pdfkit
 
-html = 'resume.html'
-out = 'resume.pdf'
+html = 'Oleksii Naidiuk.html'
+out = 'Oleksii Naidiuk.pdf'
 path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
 options = {
     'page-size': 'A4',
