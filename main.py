@@ -16,6 +16,12 @@ options = {
     'no-outline': None
 }
 
-config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
-pdfkit.from_file(html, out, configuration=config, options=options)
-webbrowser.open(out)
+
+def main():
+    config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
+    pdfkit.from_file(html, out, configuration=config, options=options)
+    webbrowser.open(out)
+
+
+if __name__ == '__main__':
+    main()
