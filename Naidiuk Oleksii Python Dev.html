@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html dir="ltr" lang="ua">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -5,7 +6,14 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
+
+
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+    <!-- ./fonts -->
+
+
+    <!-- css -->
     <style type="text/css">
         * {
             -webkit-font-smoothing: antialiased;
@@ -897,29 +905,46 @@
         html[lang="ara"] body {
             font-family: "Noto Sans Arabic", sans-serif;
         }
-
-
-        .image {
-            margin-left: -15px;
-            margin-top: -35px;
-            width: 107%;
-            height: 107%;
-            /*object-fit: none;*/
-        }
     </style>
+
+    <style>@font-face {
+        font-family: 'Open Sans Regular';
+        font-style: normal;
+        font-weight: 400;
+        src: url('chrome-extension://gkkdmjjodidppndkbkhhknakbeflbomf/fonts/open_sans/open-sans-v18-latin-regular.woff');
+    }</style>
+    <style>@font-face {
+        font-family: 'Open Sans Bold';
+        font-style: normal;
+        font-weight: 800;
+        src: url('chrome-extension://gkkdmjjodidppndkbkhhknakbeflbomf/fonts/open_sans/OpenSans-Bold.woff');
+    }</style>
+    <style>@font-face {
+        font-family: 'Open Sans ExtraBold';
+        font-style: normal;
+        font-weight: 800;
+        src: url('chrome-extension://gkkdmjjodidppndkbkhhknakbeflbomf/fonts/open_sans/open-sans-v18-latin-800.woff');
+    }</style>
 </head>
 <body class="c--37bc9b" style="overflow: hidden !important;">
+
 <div class="sidebar--bg"></div>
 
 <aside class="sidebar">
+
+    <div class="avatar--bg"></div>
     <div class="avatar"
-         style="background:url('https://cvmaker-storage.s3.eu-west-3.amazonaws.com/img/avatar/ba566b03fb6821b0d495db8d32f840c938e036c2.jpg') no-repeat;">
+         style="background:url('https://cvmaker-storage.s3.eu-west-3.amazonaws.com/img/avatar/c0ea75822af6a985f8626af71e517a8ce1c399fa.jpg') no-repeat;">
         &nbsp;
     </div>
+
+
     <div class="sidebar--data">
         <h2 class="sidebar--title">
             <span>Info</span>
+
         </h2>
+
         <ul class="sidebar--list">
             <li class="sidebar--item sidebar--item-personal">
                 <svg class="sidebar--item-icon" fill="#000000" height="24" viewBox="0 0 24 24" width="24"
@@ -927,18 +952,8 @@
                     <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
                     <path d="M0 0h24v24H0z" fill="none"></path>
                 </svg>
-                <span class="sidebar--label">Name</span><br>
+                <span class="sidebar--label">First name</span><br>
                 Oleksii Naidiuk
-            </li>
-
-            <li class="sidebar--item sidebar--item-personal">
-                <svg class="sidebar--item-icon" fill="#000000" height="24" viewBox="0 0 24 24" width="24"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"></path>
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                </svg>
-                <span class="sidebar--label">Date of birth</span><br>
-                01-12-1999
             </li>
 
             <li class="sidebar--item sidebar--item-personal">
@@ -947,9 +962,8 @@
                     <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
                     <path d="M0 0h24v24H0z" fill="none"></path>
                 </svg>
-                <span class="sidebar--label">Address</span>
-                <br>
-                Kyiv, Ukraine
+                <span class="sidebar--label">City</span><br>
+                    Kyiv
             </li>
 
 
@@ -977,40 +991,69 @@
             <li class="sidebar--item sidebar--item-personal">
                 <svg class="sidebar--item-icon" fill="#000000" height="24" viewBox="0 0 24 24" width="24"
                      xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                </svg>
+                <span class="sidebar--label">Date of birth</span><br>
+                01-12-1999
+            </li>
+
+            <li class="sidebar--item sidebar--item-personal">
+                <svg class="sidebar--item-icon" fill="#000000" height="24" viewBox="0 0 24 24" width="24"
+                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path>
                 </svg>
                 <span class="sidebar--label">Github</span><br>
-                <a href="http://github.com/adw3r">github.com/adw3r</a>
+                <a href="https://github.com/adw3r">https://github.com/adw3r</a>
             </li>
 
+            <li class="sidebar--item sidebar--item-personal">
+                <svg class="sidebar--item-icon" fill="#000000" height="24" viewBox="0 0 24 24" width="24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path>
+                </svg>
+                <span class="sidebar--label">LinkedIn</span><br>
+                <a href="https://www.linkedin.com/in/alexeynaidiuk/">
+                    https://www.linkedin.com<br/>/in/alexeynaidiuk/
+                </a>
+            </li>
 
         </ul>
+
     </div>
+
+
 </aside>
+
 <section class="sections">
+
     <div class="section--name">
         <h1>
             Oleksii Naidiuk
         </h1>
     </div>
+
+
     <div class="section">
+
+
         <div class="section section--summary">
             <div class="section--content">
                 <p><span style="color: rgba(0, 0, 0, 0.9);">Hello! I am a back-end / web scraping developer based in Kiev, Ukraine. I have about 2 years experience in developing parsers, APIs and automation scripts for marketing. Actually I am just trying to make life easier for people around me and my own using technologies. I will be glad to help you too!</span>
                 </p>
                 <p><br></p>
-                <p><span style="color: rgba(0, 0, 0, 0.9);">My mostly used technologies:</span></p>
-                <p><span style="color: rgba(0, 0, 0, 0.9);">Python, Selenium, Zennoposter, Burpsuite</span></p>
-                <p><span style="color: rgba(0, 0, 0, 0.9);">aiohttp, requests, telethon, aiogram, Beautifulsoup4, XPATH, REGEX</span>
+                <p><span style="color: rgba(0, 0, 0, 0.9);">My Stack:</span></p>
+                <p><span style="color: rgba(0, 0, 0, 0.9);">Python, Zennoposter</span></p>
+                <p><span
+                        style="color: rgba(0, 0, 0, 0.9);">Selenium, aiohttp, requests, Beautifulsoup4, XPATH, REGEX,</span>
                 </p>
                 <p><span style="color: rgba(0, 0, 0, 0.9);">asyncio, multithreading, multiprocessing, unittest</span>
                 </p>
                 <p><br></p>
                 <p><span style="color: rgba(0, 0, 0, 0.9);">RESTful API development:</span></p>
-                <p><span
-                        style="color: rgba(0, 0, 0, 0.9);">Fastapi, SQLAlchemy, Sqlite, Postgresql, Redis, MongoDB</span>
-                </p>
+                <p><span style="color: rgba(0, 0, 0, 0.9);">Fastapi, SQLAlchemy, Sqlite, Postgresql, Redis</span></p>
                 <p><br></p>
                 <p><span style="color: rgba(0, 0, 0, 0.9);">OS and tools</span></p>
                 <p><span style="color: rgba(0, 0, 0, 0.9);">Ubuntu, Windows, bash, cmd</span></p>
@@ -1023,12 +1066,15 @@
                 <p><br></p>
                 <p><span style="color: rgba(0, 0, 0, 0.9);">As a hobby I keep a telegram channel where I save all the materials that helped me in the development and which will potentially help others</span>
                 </p>
-                <p><span style="color: rgba(0, 0, 0, 0.9);"><a
-                        href="https://t.me/pyscraping">https://t.me/pyscraping</a></span></p>
+                <p><span style="color: rgba(0, 0, 0, 0.9);"><a href="https://t.me/pyscraping">https://t.me/pyscraping</a></span></p>
             </div>
         </div>
+
     </div>
+
+
     <div class="section">
+
         <div class="section--title">
             <h2>
                 <i class="section--title-icon work">
@@ -1037,10 +1083,14 @@
                         <path d="M10 16v-1H3.01L3 19c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2v-4h-7v1h-4zm10-9h-4.01V5l-2-2h-4l-2 2v2H4c-1.1 0-2 .9-2 2v3c0 1.11.89 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z"></path>
                     </svg>
                 </i>
+
                 Work experience
+
             </h2>
         </div>
+
         <div class="section--time-line-overlay"></div>
+
         <ol class="section--list">
             <li class="section--item">
                 <div class="section--time-line">
@@ -1050,20 +1100,20 @@
                 </div>
                 <div class="section--time-line-hide-overlay"></div>
                 <div class="section--heading-group">
-                    <div class="section--date">Sep 2022 - Now</div>
+                    <div class="section--date">October 2022 - Now</div>
                     <div class="section--heading">
                         <h3>Automation developer</h3>
                     </div>
                     <div class="section--sub-heading">
-                        Softum.io, Kyiv
+                        SoftSvit, Kyiv
                     </div>
                 </div>
                 <div class="section--content">
                     <p>Developed automated emailing framework with:</p>
                     <p>Python Requests Multithreading Multiprocesssing REGEX, BeautifulSoup4</p>
-                    <br>
-                    <p>REST API Microservices stack:</p>
-                    FastAPI, Docker, PostgreSQL, MongoDB, SQLAlchemy, Redis, Pydantic, Pytest</p>
+                    <p><br></p>
+                    <p>REST API Microservice stack:</p>
+                    <p>FastAPI, Docker, PostgreSQL, MongoDB, SQLAlchemy, Redis, Pydantic, Pytest</p>
                 </div>
             </li>
             <li class="section--item">
@@ -1074,7 +1124,7 @@
                 </div>
                 <div class="section--time-line-hide-overlay"></div>
                 <div class="section--heading-group">
-                    <div class="section--date">Feb 2021 - Feb 2022</div>
+                    <div class="section--date">Feb. 2021 - Feb. 2022</div>
                     <div class="section--heading">
                         <h3>Automation developer</h3>
                     </div>
@@ -1083,32 +1133,16 @@
                     </div>
                 </div>
                 <div class="section--content">
-                    <p>The main job was to create tools for automated content posting. Successfully completed parsers
-                        and automation scripts for instagram, rabota.ua, work.ua, telegram and whatsapp</p>
-                </div>
-            </li>
-            <li class="section--item">
-                <div class="section--time-line">
-                    <svg class="section--time-line-dot">
-                        <circle cx="4" cy="4" r="3" stroke="black" stroke-width="1" fill="white"></circle>
-                    </svg>
-                </div>
-                <div class="section--time-line-hide-overlay"></div>
-                <div class="section--heading-group">
-                    <div class="section--date">Sep 2020 - Feb 2021</div>
-                    <div class="section--heading">
-                        <h3>Content-manager</h3>
-                    </div>
-                    <div class="section--sub-heading">
-                        Feleton, Kyiv
-                    </div>
-                </div>
-                <div class="section--content">
-                    <p>Creating and posting content on marketplaces</p>
+                    <p>Successfully completed parsers and automation scripts for instagram, rabotaua, workua, telegram,
+                        whatsapp to optimize business processes.</p>
                 </div>
             </li>
         </ol>
     </div>
+
+
 </section>
+
+
 </body>
 </html>
