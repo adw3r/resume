@@ -17,7 +17,7 @@ def convert_to_pdf():
         'encoding': "UTF-8",
         'no-outline': None
     }
-    config = pdfkit.configuration(wkhtmltopdf=r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe')
+    config = pdfkit.configuration(wkhtmltopdf=r'wkhtmltox\bin\wkhtmltopdf.exe')
     pdfkit.from_file(source, pdf_out_path, configuration=config, options=options)
     webbrowser.open(pdf_out_path)
 
