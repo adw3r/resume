@@ -2,7 +2,7 @@ import webbrowser
 
 import pdfkit
 
-source = r'Naidiuk Oleksii Python Dev.html'
+source = r'Python dev Naidiuk Oleksii.html'
 pdf_out_path = r'Python dev Naidiuk Oleksii.pdf'
 
 
