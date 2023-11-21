@@ -38,3 +38,7 @@ def download_wkhtmltox():
     )
     with open('wkhtmltox.zip', 'wb') as file:
         file.write(response.content)
+
+
+if __name__ == '__main__':
+    download_wkhtmltox()
