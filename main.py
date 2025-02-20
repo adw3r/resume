@@ -16,7 +16,7 @@ pdf_out_path = r'Python dev Naidiuk Oleksii.pdf'
 def convert_to_pdf():
     options = {
         'page-size': 'A4',
-        'zoom': 1,
+        'zoom': 1.4,
         'margin-top': '0in',
         'margin-right': '0in',
         'margin-bottom': '0in',
