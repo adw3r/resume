@@ -3,6 +3,8 @@ import webbrowser
 import pdfkit
 import argparse
 
+# EXECUTOR = r'wkhtmltox\wkhtmltox\bin\wkhtmltopdf.exe'
+
 parser = argparse.ArgumentParser()
 parser.add_argument("-e", "--executor", help="The executor to use")
 args = parser.parse_args()
@@ -24,7 +26,7 @@ def convert_to_pdf():
         'encoding': "UTF-8",
         'no-outline': None
     }
-    config = pdfkit.configuration()
+    config = pdfkit.configuration(wkhtmltopdf=EXECUTOR)
     pdfkit.from_file(source, pdf_out_path, configuration=config, options=options)
     webbrowser.open(pdf_out_path)
 
