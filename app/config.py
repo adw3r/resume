@@ -16,7 +16,6 @@ _config = _config["GLOBAL"]
 
 PORT = _config.getint("PORT")
 HOST = _config["HOST"]
-RELOAD = _config.getboolean("RELOAD")
 
 logger.remove()
 # logging.disable()

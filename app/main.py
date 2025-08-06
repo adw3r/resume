@@ -37,9 +37,7 @@ async def get_resume_in_pdf():
         async with async_playwright() as p:
             browser = await p.chromium.launch(headless=True)
             page = await browser.new_page()
-            async with aiofiles.open(url_to_html, "r", encoding="utf-8") as f:
-                html = await f.read()
-                await page.set_content(html)
+            await page.goto(f"http://localhost:{config.PORT}/")
             await page.pdf(path=output_path, format="A4", print_background=True)
             await browser.close()
         return FileResponse(path=output_path, filename='Python dev Naidiuk Oleksii.pdf', media_type='application/pdf')
@@ -49,4 +47,4 @@ async def get_resume_in_pdf():
 
 
 if __name__ == "__main__":
-    uvicorn.run("app.main:app", host=config.HOST, port=config.PORT, reload=config.RELOAD)
+    uvicorn.run("app.main:app", host=config.HOST, port=config.PORT)

@@ -1,11 +1,12 @@
 services:
   resume:
-    depends_on:
-      - nginx
     restart: unless-stopped
     ports:
       - "8080:8080"
     image: alexeynaidiuk/resume:latest
-    build:
+    build: .
     command: 'uv run --no-dev python -m app.main'
-    container_name: resume_automation
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8080
+    platform: linux/amd64
