@@ -31,7 +31,7 @@ async def get_resume(request: Request):
     return templates.TemplateResponse(name="Python dev Naidiuk Oleksii.html", request=request)
 
 
-@app.get('/resume_in_pdf')
+@app.get('resume/resume_in_pdf')
 async def get_resume_in_pdf():
     try:
         async with async_playwright() as p:
