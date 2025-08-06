@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, FileResponse
 from playwright.async_api import async_playwright
 from starlette.staticfiles import StaticFiles
+
 from starlette.templating import Jinja2Templates
 
 from app import config
