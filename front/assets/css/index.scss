@@ -151,20 +151,8 @@ p {
   top: 10px;
 }
 
-.section.references .section--time-line-hide-overlay {
-  height: 95%;
-}
-
 .section--item:last-child .section--time-line {
   height: 30px;
-}
-
-.section--item:last-child .section--time-line-hide-overlay {
-  display: inline;
-}
-
-.section:last-child .section--item:last-child {
-  padding-bottom: 0;
 }
 
 .section--time-line-dot {
@@ -184,10 +172,7 @@ p {
 }
 
 .section--list {
-  //display: block;
-  //list-style: none;
-  padding: 0 0 0 10px;
-  //margin: 0;
+  padding-left: 10px;
 }
 
 .section--item {
