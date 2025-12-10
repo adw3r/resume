@@ -1,0 +1,19 @@
+name: deploy.yml
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: Deployment
+
+    steps:
+      - name: "Deploy via SSH"
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            cd /home/alex/mono_automation
+            docker-compose up --pull always -d --wait --force-recreate --remove-orphans resume
