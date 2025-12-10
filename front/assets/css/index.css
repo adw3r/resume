@@ -159,6 +159,7 @@ p {
 
 .section--item:last-child {
   background: #fff;
+  padding-bottom: 15px;
 }
 
 .section--item:last-child .section--time-line {
