@@ -77,7 +77,6 @@ p {
   position: relative;
   width: 100%;
   z-index: 99;
-  //margin: 0 0 0 0;
   font-weight: 600;
   background: #fff;
   padding-left: 10px;
@@ -154,11 +153,6 @@ p {
 
 .section.references .section--time-line-hide-overlay {
   height: 95%;
-}
-
-.section--item:last-child {
-  background: #fff;
-  padding-bottom: 15px;
 }
 
 .section--item:last-child .section--time-line {
