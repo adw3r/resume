@@ -78,6 +78,7 @@ p {
   background: #fff;
   padding-left: 10px;
   page-break-inside: avoid;
+  margin-bottom: 10px;
 }
 
 .section--title span {
@@ -179,7 +180,7 @@ p {
   position: relative;
   list-style: none;
   padding: 0 0 0 170px;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 .section--date {
@@ -192,16 +193,7 @@ p {
   margin: 0;
 }
 
-.section--heading {
-  display: block;
-  padding: 10px 0 0 0;
-  margin: 0;
-}
-
 .section--sub-heading {
-  display: block;
-  padding: 0;
-  margin: 0;
   font-size: 14px;
 }
 
