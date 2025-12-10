@@ -8,6 +8,8 @@ body {
   place-items: center;
   font: 12px "Helvetica", Arial;
   color: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -51,10 +53,9 @@ p {
   padding: 0;
 }
 
-.sections {
+.container {
   /*left: 20px;*/
   /*right: 20px;*/
-  position: relative;
   width: 740px;
 }
 
@@ -110,43 +111,8 @@ p {
   fill: lightslategrey;
 }
 
-.section--title-icon.education svg {
-  top: 4px;
-  left: 4px;
-}
-
-.section--title-icon.course svg {
-  top: 5px;
-  left: 5px;
-}
-
 .section--title-icon.work svg {
   top: 4px;
-  left: 5px;
-}
-
-.section--title-icon.internships svg {
-  top: 4px;
-  left: 5px;
-}
-
-.section--title-icon.certificate svg {
-  top: 4px;
-  left: 5px;
-}
-
-.section--title-icon.single-textarea svg {
-  top: 4px;
-  left: 5px;
-}
-
-.section--title-icon.extra-curricular svg {
-  top: 4px;
-  left: 5px;
-}
-
-.section--title-icon.reference svg {
-  top: 5px;
   left: 5px;
 }
 
@@ -193,7 +159,6 @@ p {
 
 .section--item:last-child {
   background: #fff;
-  padding-bottom: 15px;
 }
 
 .section--item:last-child .section--time-line {
@@ -215,13 +180,6 @@ p {
   height: 12px;
   width: 10px;
   z-index: 999;
-  /* fill: red; */
-  /* height: 9px;
-  width: 9px; */
-  /* border-radius: 50%; */
-  /* background: #fff; */
-  /* border: 1px solid #2b2b38; */
-  /* border: 0.1em solid #2b2b38; */
 }
 
 .section--heading-group {
@@ -232,14 +190,7 @@ p {
 }
 
 .section--list {
-  display: block;
-  list-style: none;
   padding: 0 0 0 10px;
-  margin: 0;
-}
-
-.section--list.no-indent .section--item {
-  padding-left: 20px;
 }
 
 .section--item {
@@ -248,22 +199,6 @@ p {
   list-style: none;
   padding: 0 0 0 170px;
   margin: 0;
-}
-
-.section--item.skills h3 {
-  font-size: 13px;
-}
-
-.section--item.skills:last-child {
-  padding-bottom: 0;
-}
-
-.skills--stars svg {
-  fill: #b1b1b1;
-}
-
-.skills--stars svg.active {
-  fill: #2b2b38;
 }
 
 .section--date {
