@@ -1,4 +1,4 @@
-FROM ghcr.io/astral-sh/uv:debian-slim
+FROM ghcr.io/astral-sh/uv:debian
 WORKDIR /app
 RUN apt-get update && apt-get install -y \
     wget \
@@ -33,6 +33,7 @@ RUN apt-get update && apt-get install -y \
 COPY pyproject.toml pyproject.toml
 COPY uv.lock uv.lock
 RUN uv sync --frozen --no-dev
+#RUN uv run playwright install-deps
 RUN uv run playwright install chromium
 
 COPY app app

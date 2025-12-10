@@ -23,13 +23,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-url_to_html = str(config.ROOT_FOLDER / "front" / r"Python dev Naidiuk Oleksii.html")
+url_to_html = str(config.ROOT_FOLDER / "front" / r"index.html")
 output_path = str(config.ROOT_FOLDER / r"Python dev Naidiuk Oleksii.pdf")
 
 
 @app.get("/", response_class=HTMLResponse)
 async def get_resume(request: Request):
-    return templates.TemplateResponse(name="Python dev Naidiuk Oleksii.html", request=request)
+    return templates.TemplateResponse(name="index.html", request=request)
 
 
 @app.get('/resume_in_pdf')
