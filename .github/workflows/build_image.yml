@@ -33,7 +33,7 @@ jobs:
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
   deploy:
     runs-on: ubuntu-latest
-    environment: Deployment
+    needs: build
 
     steps:
       - name: "Deploy via SSH"
