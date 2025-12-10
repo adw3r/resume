@@ -148,10 +148,6 @@ p {
   top: 10px;
 }
 
-.section--item:last-child .section--time-line {
-  height: 30px;
-}
-
 .section--time-line-dot {
   position: absolute;
   left: -3px;
