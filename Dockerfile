@@ -1,40 +1,27 @@
 FROM ghcr.io/astral-sh/uv:debian
+
 WORKDIR /app
-RUN apt-get update && apt-get install -y \
-    wget \
-    libglib2.0-0 \
-    libnss3 \
-    libnspr4 \
-    libatk1.0-0 \
-    libatk-bridge2.0-0 \
-    libcups2 \
-    libdbus-1-3 \
-    libxcomposite1 \
-    libxdamage1 \
-    libxrandr2 \
-    libgbm1 \
-    libxshmfence1 \
-    libasound2 \
-    libx11-xcb1 \
-    libxext6 \
-    libxfixes3 \
-    libx11-6 \
-    libxcb1 \
-    libxkbcommon0 \
-    libpangocairo-1.0-0 \
-    libpango-1.0-0 \
-    libgtk-3-0 \
-    libexpat1 \
-    fonts-liberation \
-    ca-certificates \
-    --no-install-recommends && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN apt update && apt upgrade -y
+RUN apt-get install -y libnspr4\
+    libnss3\
+    libdbus-1-3\
+    libatk1.0-0\
+    libatk-bridge2.0-0\
+    libatspi2.0-0\
+    libxcomposite1\
+    libxdamage1\
+    libxfixes3\
+    libxrandr2\
+    libgbm1\
+    libxkbcommon0\
+    libasound2\
+    libcups2
 
 COPY pyproject.toml pyproject.toml
 COPY uv.lock uv.lock
-RUN uv sync --frozen --no-dev
-#RUN uv run playwright install-deps
-RUN uv run playwright install chromium
+RUN uv sync --no-dev --frozen
+RUN uv run --no-dev playwright install chromium
 
 COPY app app
 COPY front front
