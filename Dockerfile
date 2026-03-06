@@ -2,7 +2,7 @@ FROM ghcr.io/astral-sh/uv:debian
 
 WORKDIR /app
 
-RUN apt update && apt upgrade -y
+RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y libnspr4\
     libnss3\
     libdbus-1-3\
