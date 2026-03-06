@@ -43,5 +43,5 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
-            cd /home/alex/mono_automation
+            cd /home/alex/resume
             docker-compose up --pull always -d --wait --force-recreate --remove-orphans resume
